@@ -18,7 +18,7 @@ namespace ConsumeDataLabFT.Services
         public TokenService()
         {
             servicesHttpClient = ServicesHttpClient.GetInstance;
-            _client = _services.ServicesHttpClientBaseAddress();
+            _client = servicesHttpClient.ServicesHttpClientBaseAddress();
         }
 
         public async Task<OAuth2Token> GetToken(string clientId, string clientSecret)
