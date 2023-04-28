@@ -12,10 +12,10 @@ namespace ConsumeDataLabFT
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             var tokenService = new TokenService();
-            //var token = await tokenService.GetToken("KyriaConSvsCITest/BMarcel30", "@Wormkernel1");
+            var token = await tokenService.GetToken("KyriaConSvsCITest/BMarcel30", "@Wormkernel1");
         }
     }
 }
