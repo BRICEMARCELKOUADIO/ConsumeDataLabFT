@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using ConsumeDataLabFT.Services;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +14,8 @@ namespace ConsumeDataLabFT
     {
         static void Main(string[] args)
         {
-            
+            var tokenService = new TokenService();
+            //var token = await tokenService.GetToken("KyriaConSvsCITest/BMarcel30", "@Wormkernel1");
         }
     }
 }
