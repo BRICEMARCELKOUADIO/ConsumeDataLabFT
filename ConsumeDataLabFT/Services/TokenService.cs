@@ -13,7 +13,6 @@ namespace ConsumeDataLabFT.Services
     public class TokenService
     {
         private readonly HttpClient _client;
-        private readonly ServicesHttpClient _services;
         private readonly ServicesHttpClient servicesHttpClient;
         public TokenService()
         {
