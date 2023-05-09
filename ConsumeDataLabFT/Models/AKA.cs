@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace ConsumeDataLabFT.Models
 {
-    public class ID
+    public class AKA
     {
-        public int Id { get; set; }
-        public string Number { get; set; }
+        public string Category { get; set; }
+        public int ID { get; set; }
+        public Name Name { get; set; }
         public string Type { get; set; }
-        public string Issuer { get; set; }
-        public string Label { get; set; }
     }
 }

@@ -16,6 +16,8 @@ namespace ConsumeDataLabFT
         {
             var tokenService = new TokenService();
             var token = await tokenService.GetToken("KyriaConSvsCITest/BMarcel30", "@Wormkernel1");
+            Console.WriteLine("Token = "+token?.access_token);
+            Console.ReadLine();
         }
     }
 }

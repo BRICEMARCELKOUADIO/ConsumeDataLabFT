@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace ConsumeDataLabFT.Models
 {
-    public class Phones
+    public class SourceItem
     {
-        public IList<InputPhone> inputPhone { get; set; }
+        public string SourceURI { get; set; }
+        public DateTime DateModified { get; set; }
     }
 }

@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace ConsumeDataLabFT.Models
 {
-    public class Addresses
+    public class SearchInput
     {
-        public IList<InputAddress> inputAddress { get; set; }
+        public IList<Record> Records { get; set; }
     }
 }

@@ -8,9 +8,9 @@ namespace ConsumeDataLabFT.Models
 {
     public class AssignResultTo
     {
-        public string division { get; set; }
-        public bool emailNotification { get; set; }
-        public IList<string> rolesOrUsers { get; set; }
+        public string Division { get; set; }
+        public string EmailNotification { get; set; }
+        public IList<string> RolesOrUsers { get; set; }
         public string Type { get; set; }
     }
 }

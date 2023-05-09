@@ -7,6 +7,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json.Serialization;
 
 namespace ConsumeDataLabFT.Services
 {
@@ -22,8 +23,9 @@ namespace ConsumeDataLabFT.Services
 
         public async Task<OAuth2Token> GetToken(string clientId, string clientSecret)
         {
+            var token = new OAuth2Token();
             _client.DefaultRequestHeaders.Accept.Clear();
-            //_client.DefaultRequestHeaders.Add();
+
             _client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/x-www-form-urlencoded"));
             // _client.DefaultRequestHeaders.Add("apikey", apikey);
             _client.DefaultRequestHeaders.Add("Authorization", "Basic " + Convert.ToBase64String(
@@ -38,11 +40,14 @@ namespace ConsumeDataLabFT.Services
 
             request.Content = new FormUrlEncodedContent(postData);
 
-            var response = await _client.PostAsync(ConstantEndPoint.TokenUrl, new FormUrlEncodedContent(postData));
+            var response = await _client.PostAsync(ConstantEndPoint.TokenUrl, request.Content);
 
             var content = await response.Content.ReadAsStringAsync();
 
-            return null;
+            var Converter = new JsonSerializer();
+            token = Converter.Deserialize<OAuth2Token>(content);
+
+            return token;
         }
 
     }

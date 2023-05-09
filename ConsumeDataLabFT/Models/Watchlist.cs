@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ConsumeDataLabFT.Models
 {
-    public class Eft
+    public class Watchlist
     {
-        public string type { get; set; }
-        public string value { get; set; }
+        public IList<Match> Matches { get; set; }
+        public string Status { get; set; }
     }
 }

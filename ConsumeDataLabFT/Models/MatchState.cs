@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace ConsumeDataLabFT.Models
 {
-    public class Search
+    public class MatchState
     {
-        public EntitySearchRequest entitySearchRequest { get; set; }
+        public object MatchID { get; set; }
+        public string Type { get; set; }
     }
 }

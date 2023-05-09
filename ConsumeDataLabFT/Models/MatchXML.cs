@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace ConsumeDataLabFT.Models
 {
-    public class DateIssued
+    public class MatchXML
     {
-        public int year { get; set; }
-        public int month { get; set; }
-        public int day { get; set; }
+        public IList<DOBMatch> DOBMatches { get; set; }
     }
 }

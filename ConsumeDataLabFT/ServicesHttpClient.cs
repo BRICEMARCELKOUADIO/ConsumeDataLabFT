@@ -40,7 +40,7 @@ namespace ConsumeDataLabFT
         private ServicesHttpClient()
         {
 
-            _BaseAddress = ConfigurationServiceUse.getServiceParameters().BaseAdresse();
+            _BaseAddress = "https://bridgerstaging.lexisnexis.com/LN.WebServices";//ConfigurationServiceUse.getServiceParameters().BaseAdresse();
             client = new HttpClient();
             client.BaseAddress = new Uri(_BaseAddress);
         }

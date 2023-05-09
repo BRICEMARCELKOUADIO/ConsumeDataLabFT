@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace ConsumeDataLabFT.Models
 {
-    public class InputPhone
+    public class DOBMatch
     {
-        public string number { get; set; }
-        public string type { get; set; }
+        public string Input { get; set; }
+        public string List { get; set; }
+        public int Score { get; set; }
     }
 }

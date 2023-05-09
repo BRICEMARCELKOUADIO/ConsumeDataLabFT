@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace ConsumeDataLabFT.Models
 {
-    public class Ids
+    public class DOB
     {
-        public IList<InputID> inputID { get; set; }
+        public string InputValue { get; set; }
+        public string ListValue { get; set; }
+        public int Score { get; set; }
     }
 }

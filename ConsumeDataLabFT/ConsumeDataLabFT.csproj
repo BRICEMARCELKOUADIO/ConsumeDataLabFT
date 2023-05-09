@@ -39,12 +39,6 @@
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="RestClient.Net, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\RestClient.Net.6.0.0\lib\net45\RestClient.Net.dll</HintPath>
-    </Reference>
-    <Reference Include="RestClient.Net.Abstractions, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\RestClient.Net.Abstractions.6.0.0\lib\net45\RestClient.Net.Abstractions.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
@@ -67,6 +61,7 @@
     <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security.Cryptography.Algorithms, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net461\System.Security.Cryptography.Algorithms.dll</HintPath>
     </Reference>
@@ -102,30 +97,39 @@
     <Compile Include="IConfigurationService.cs" />
     <Compile Include="IProviderWebService.cs" />
     <Compile Include="IServiceSingletonHttpClient.cs" />
+    <Compile Include="JsonSerializer.cs" />
     <Compile Include="Models\AdditionalInfo.cs" />
-    <Compile Include="Models\Addresses.cs" />
+    <Compile Include="Models\Address.cs" />
+    <Compile Include="Models\AdverseMedia.cs" />
+    <Compile Include="Models\AKA.cs" />
     <Compile Include="Models\AssignResultTo.cs" />
     <Compile Include="Models\ClientContext.cs" />
-    <Compile Include="Models\Configuration.cs" />
+    <Compile Include="Models\Conflicts.cs" />
     <Compile Include="Models\Date.cs" />
-    <Compile Include="Models\DateExpires.cs" />
-    <Compile Include="Models\DateIssued.cs" />
-    <Compile Include="Models\Eft.cs" />
+    <Compile Include="Models\DOB.cs" />
+    <Compile Include="Models\DOBMatch.cs" />
+    <Compile Include="Models\Enforcement.cs" />
     <Compile Include="Models\Entity.cs" />
-    <Compile Include="Models\EntitySearchRequest.cs" />
-    <Compile Include="Models\Id.cs" />
-    <Compile Include="Models\Ids.cs" />
-    <Compile Include="Models\Input.cs" />
-    <Compile Include="Models\InputAdditionalInfo.cs" />
-    <Compile Include="Models\InputAddress.cs" />
-    <Compile Include="Models\InputID.cs" />
-    <Compile Include="Models\InputPhone.cs" />
+    <Compile Include="Models\EntityDetails.cs" />
+    <Compile Include="Models\File.cs" />
+    <Compile Include="Models\History.cs" />
+    <Compile Include="Models\ID.cs" />
+    <Compile Include="Models\Match.cs" />
+    <Compile Include="Models\MatchState.cs" />
+    <Compile Include="Models\MatchXML.cs" />
     <Compile Include="Models\Name.cs" />
     <Compile Include="Models\OAuth2Token.cs" />
-    <Compile Include="Models\Phones.cs" />
+    <Compile Include="Models\PEP.cs" />
     <Compile Include="Models\Record.cs" />
-    <Compile Include="Models\Search.cs" />
-    <Compile Include="Models\Text.cs" />
+    <Compile Include="Models\RecordDetails.cs" />
+    <Compile Include="Models\RecordState.cs" />
+    <Compile Include="Models\Relationship.cs" />
+    <Compile Include="Models\SearchConfiguration.cs" />
+    <Compile Include="Models\SearchInput.cs" />
+    <Compile Include="Models\SearchRequest.cs" />
+    <Compile Include="Models\SearchResponse.cs" />
+    <Compile Include="Models\SourceItem.cs" />
+    <Compile Include="Models\Watchlist.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServicesHttpClient.cs" />

@@ -8,10 +8,12 @@ namespace ConsumeDataLabFT.Models
 {
     public class Record
     {
-        public Eft eft { get; set; }
-        public Entity entity { get; set; }
-        public Id id { get; set; }
-        public int recordID { get; set; }
-        public Text text { get; set; }
+        public Entity Entity { get; set; }
+
+        //public int Record { get; set; }
+        public RecordDetails RecordDetails { get; set; }
+        public long ResultID { get; set; }
+        public int RunID { get; set; }
+        public Watchlist Watchlist { get; set; }
     }
 }

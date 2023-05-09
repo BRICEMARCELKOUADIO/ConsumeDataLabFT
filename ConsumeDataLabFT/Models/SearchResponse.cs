@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace ConsumeDataLabFT.Models
 {
-    public class ClientContext
+    public class SearchResponse
     {
         public string ClientReference { get; set; }
+        public IList<Record> Records { get; set; }
+        public string SearchEngineVersion { get; set; }
     }
 }

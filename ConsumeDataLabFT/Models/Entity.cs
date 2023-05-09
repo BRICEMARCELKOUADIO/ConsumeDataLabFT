@@ -8,12 +8,9 @@ namespace ConsumeDataLabFT.Models
 {
     public class Entity
     {
-        public AdditionalInfo additionalInfo { get; set; }
-        public Addresses addresses { get; set; }
-        public string entityType { get; set; }
-        public string gender { get; set; }
-        public Name name { get; set; }
-        public Phones phones { get; set; }
-        public Ids ids { get; set; }
+        public string EntityType { get; set; }
+        public Name Name { get; set; }
+        public IList<AdditionalInfo> AdditionalInfo { get; set; }
+        public IList<Address> Addresses { get; set; }
     }
 }
